@@ -1,0 +1,248 @@
+/* Home page */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../media/Background.png");
+}
+
+nav .navbar-brand img {
+    width: 150px;
+}
+
+body .home {
+    background-image: url("../media/Pic.png");
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 72%;
+    position: relative;
+}
+
+.home section h1 {
+    position: relative;
+    margin-left: 20%;
+    margin-top: 15%;
+    width: fit-content;
+    font-size: 20px;
+}
+
+.home section h1 span {
+    font-size: 60px;
+    margin: 25px;
+}
+
+.home section h1::after {
+    content: "";
+    display: flex;
+    width: 15px;
+    height: 15px;
+    border-top: solid 2px black;
+    border-left: solid 2px black;
+    position: absolute;
+    left: -50px;
+    top: 45px;
+    transform: rotatez(-45deg);
+}
+
+.home section h1::before {
+    content: "";
+    display: flex;
+    width: 15px;
+    height: 15px;
+    border-top: solid 2px black;
+    border-left: solid 2px black;
+    position: absolute;
+    right: -50px;
+    top: 45px;
+    transform: rotatez(135deg);
+}
+
+/* mount page */
+
+.mount h2 span {
+    color: #4e171b;
+}
+
+.mount .cards img {
+    width: 50%;
+    min-width: 200px;
+}
+
+.mount .cards .dots {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.mount .cards .title .dots ul {
+    position: relative;
+    width: fit-content;
+}
+
+.mount .cards .title .dots ul li {
+    width: 13px;
+    height: 13px;
+    background-color: #4e171b;
+    border: solid 3px #4e171b;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.mount .cards .title .dots ul::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -50px;
+    border-top: solid #4e171b 3px;
+    border-right: solid #4e171b 3px;
+    width: 15px;
+    height: 15px;
+    transform: rotateZ(45deg);
+    top: 5px;
+}
+
+.mount .cards .title .dots ul li:first-child {
+    background-color: white;
+}
+
+.mount .cards .title p {
+    color: #4e171b;
+    font-size: 20px;
+}
+
+@media (max-width:425px) {
+    .mount>p {
+        width: 100% !important;
+        text-align: center;
+    }
+}
+
+/* tour */
+.tour .cards .card {
+    width: 30% !important;
+    min-width: 250px;
+}
+
+.tour .title span {
+    color: #1e5a7c;
+}
+
+@media (max-width:450px) {
+    .tour .cards .card {
+        margin: 10px !important;
+    }
+}
+
+/* Store */
+
+.store {
+    margin-top: 100px;
+}
+
+.store .content {
+    width: 40%;
+}
+
+.store .word {
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    min-width: 150px;
+}
+
+.store .word span {
+    font-size: 160px;
+    display: flex;
+    transform: rotateZ(-90deg);
+}
+
+.store .flag {
+    background-color: white;
+    height: 90vh;
+    width: 130px;
+    min-width: 70px;
+}
+
+.store .flag .dots {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.store .flag .dots ul {
+    width: fit-content;
+    transform: rotateZ(-90deg);
+}
+
+.store .flag .dots ul li {
+    width: 13px;
+    height: 13px;
+    background-color: black;
+    border: solid 3px black;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.store .flag .dots ul li::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -50px;
+    border-top: solid black 3px;
+    border-right: solid black 3px;
+    width: 15px;
+    height: 15px;
+    transform: rotateZ(45deg);
+    top: 5px;
+}
+
+.store .flag .dots ul li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -50px;
+    border-top: solid black 3px;
+    border-right: solid black 3px;
+    width: 15px;
+    height: 15px;
+    transform: rotateZ(-135deg);
+    top: 5px;
+}
+
+.store .flag .dots ul li:last-child {
+    background-color: white;
+}
+
+.store img {
+    width: 400px;
+    min-width: 200px;
+}
+
+.store .cards {
+    width: 50%;
+    min-width: 320px;
+}
+
+@media (max-width:532px) {
+    .store .cards {
+        width: 100% !important;
+        justify-content: center;
+        align-content: space-around;
+        margin: 20px;
+        height: 80vh;
+    }
+
+    .store .cards img {
+        width: 80%;
+    }
+}
+
+/* about */
+
+.about {
+    background-color: white;
+    margin-top: 100px;
+}
